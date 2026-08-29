@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PBS Kids Nostalgia Archive</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="logo-area">
+          <h1>PBS Kids Nostalgia Archive</h1>
+          <p>
+            Old games, old websites, and the things I somehow still remember.
+          </p>
+        </div>
+
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="#">Games</a>
+          <a href="#">Memories</a>
+          <a href="#">About</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="welcome-card">
+          <h2>Welcome Back</h2>
+
+          <p>
+            This is my little archive of PBS Kids games, websites, and strange
+            childhood memories from the 2000s.
+          </p>
+
+          <p>
+            I’m revisiting old Flash games through Flashpoint and writing down
+            what I remember, what still holds up, and what immediately sends me
+            back twenty years.
+          </p>
+        </section>
+
+        <section class="featured-section">
+          <h2>Featured Memory</h2>
+
+          <div class="featured-card">
+            <img src="images/placeholder.png" alt="Featured PBS Kids game" />
+
+            <div>
+              <h3>Game Title Here</h3>
+              <p>
+                I remembered almost nothing about this game until the menu music
+                started playing.
+              </p>
+
+              <a class="big-button" href="#">Read my thoughts</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="portal-grid">
+          <article class="portal-card">
+            <h3>Old Games</h3>
+            <p>Revisiting the Flash games I used to play constantly.</p>
+            <a href="#">Enter</a>
+          </article>
+
+          <article class="portal-card">
+            <h3>Website Memories</h3>
+            <p>
+              Menus, buttons, sounds, layouts, and things buried in my brain.
+            </p>
+            <a href="#">Enter</a>
+          </article>
+
+          <article class="portal-card">
+            <h3>Random Discoveries</h3>
+            <p>Things I completely forgot existed until opening Flashpoint.</p>
+            <a href="#">Enter</a>
+          </article>
+        </section>
+      </main>
+
+      <footer>
+        <div class="rating-box">
+          <p>This website is rated G.</p>
+
+          <a href="https://www.mabsland.com/Adoption.html">
+            <img
+              src="images/Censor_Gc.gif"
+              alt="Rated G by the Adopt a Censorship Panda system"
+            />
+          </a>
+        </div>
+
+        <p class="footer-text">
+          Made with HTML, CSS, nostalgia, and an unreasonable attachment to
+          Flash games.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<style>
+  /* ------------------------------
+   BASIC RESET
+------------------------------ */
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+    background: #dff5ff;
+    color: #222;
+  }
+
+  .page-shell {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+    background: white;
+    border: 4px solid #333;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 8px 8px 0 #999;
+  }
+
+  .site-header {
+    padding: 25px;
+    background: #ffd84d;
+    border-bottom: 4px solid #333;
+  }
+
+  .logo-area h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .logo-area p {
+    margin-bottom: 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav a {
+    padding: 10px 18px;
+    background: white;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid #333;
+    border-radius: 20px;
+    box-shadow: 3px 3px 0 #333;
+  }
+
+  nav a:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 #333;
+  }
+
+  main {
+    padding: 25px;
+  }
+
+  .welcome-card,
+  .featured-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 3px dashed #555;
+    border-radius: 20px;
+  }
+
+  .welcome-card {
+    background: #f4f0ff;
+  }
+
+  .featured-section {
+    background: #e9ffe8;
+  }
+
+  .featured-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .featured-card img {
+    width: 240px;
+    max-width: 100%;
+    border: 4px solid #333;
+    border-radius: 12px;
+  }
+
+  .big-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #ff8ac7;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid #333;
+    border-radius: 12px;
+  }
+
+  .portal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .portal-card {
+    padding: 20px;
+    text-align: center;
+    border: 3px solid #333;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 #777;
+  }
+
+  .portal-card:nth-child(1) {
+    background: #bce8ff;
+  }
+
+  .portal-card:nth-child(2) {
+    background: #ffd9eb;
+  }
+
+  .portal-card:nth-child(3) {
+    background: #d9ffc7;
+  }
+
+  .portal-card a {
+    font-weight: bold;
+    color: #222;
+  }
+
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #eeeeee;
+    border-top: 4px solid #333;
+  }
+
+  .rating-box {
+    margin-bottom: 15px;
+  }
+
+  .rating-box img {
+    max-width: 100%;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 700px) {
+    .featured-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .portal-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
