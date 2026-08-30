@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memories | PBS Kids Nostalgia Archive</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="logo-area">
+          <h1>Memory Corner</h1>
+          <p>Little pieces of PBS Kids that somehow stayed in my brain.</p>
+        </div>
+
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="games.html">Games</a>
+          <a href="memories.html">Memories</a>
+          <a href="about.html">About</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="memories-intro">
+          <h2>Things I Still Remember</h2>
+
+          <p>
+            Not everything I remember from PBS Kids is tied to one specific
+            game. Some of it is just a sound, a menu, a character, a website
+            layout, or something tiny that stayed with me for years.
+          </p>
+        </section>
+
+        <section class="memory-grid">
+          <article class="memory-card">
+            <h3>Favorite Shows</h3>
+            <p>
+              A place to talk about the shows I watched most and what I remember
+              liking about them.
+            </p>
+          </article>
+
+          <article class="memory-card">
+            <h3>Website Design</h3>
+            <p>
+              Old navigation menus, colorful buttons, character-themed pages,
+              and the general look of PBS Kids websites from the 2000s.
+            </p>
+          </article>
+
+          <article class="memory-card">
+            <h3>Sounds & Music</h3>
+            <p>
+              Menu music, little sound effects, voices, and other audio that
+              immediately brings the old games back.
+            </p>
+          </article>
+
+          <article class="memory-card">
+            <h3>Things I Forgot About</h3>
+            <p>
+              Small details that only came back once I started looking through
+              old games and screenshots again.
+            </p>
+          </article>
+        </section>
+
+        <section class="show-memories">
+          <h2>Show Memories</h2>
+
+          <div class="show-memory-list">
+            <article class="show-memory">
+              <h3>Arthur</h3>
+              <p>Add a short personal memory here.</p>
+            </article>
+
+            <article class="show-memory">
+              <h3>Martha Speaks</h3>
+              <p>Add a short personal memory here.</p>
+            </article>
+
+            <article class="show-memory">
+              <h3>Wild Kratts</h3>
+              <p>Add a short personal memory here.</p>
+            </article>
+
+            <article class="show-memory">
+              <h3>Curious George</h3>
+              <p>Add a short personal memory here.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>Part of the PBS Kids Nostalgia Archive.</p>
+      </footer>
+    </div>
+  </body>
+</html>
+<style>
+  .memories-intro {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #fff2d6;
+    border: 3px dashed #555;
+    border-radius: 18px;
+  }
+
+  .memory-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-bottom: 40px;
+  }
+
+  .memory-card {
+    padding: 20px;
+    border: 3px solid #333;
+    border-radius: 18px;
+    background: #eef7ff;
+    box-shadow: 4px 4px 0 #888;
+  }
+
+  .memory-card:nth-child(2) {
+    background: #fff0f6;
+  }
+
+  .memory-card:nth-child(3) {
+    background: #efffe7;
+  }
+
+  .memory-card:nth-child(4) {
+    background: #f4efff;
+  }
+
+  .memory-card h3 {
+    margin-top: 0;
+  }
+
+  .show-memories {
+    margin-top: 20px;
+  }
+
+  .show-memory-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .show-memory {
+    padding: 16px;
+    background: #fafafa;
+    border: 2px solid #555;
+    border-radius: 14px;
+  }
+
+  .show-memory h3 {
+    margin-top: 0;
+  }
+
+  @media (max-width: 700px) {
+    .memory-grid,
+    .show-memory-list {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
