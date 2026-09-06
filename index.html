@@ -5,7 +5,6 @@
     <link rel="icon" type="image/x-icon" href="favicon/construction.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PBS Kids Nostalgia Archive</title>
-    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -31,7 +30,7 @@
           <h2>Welcome Back</h2>
 
           <p>
-            This is my little archive of PBS Kids games, websites, and strange
+            This is my little archive of PBS Kids games, websites and strange
             childhood memories from the 2000s.
           </p>
 
@@ -53,13 +52,26 @@
 
             <div>
               <h3>Draco Glide - Wild Kratts</h3>
-              <p>
-                I remembered this game very vividly as I played it over and over
-                again when I was a kid. I really loved all the Wild Kratts
-                games, but this was one of my favorites.
-              </p>
-
-              <a class="big-button" href="games.html">Read my thoughts</a>
+              <details class="game-details">
+                <summary>Read more</summary>
+                <div class="expanded-thoughts">
+                  <p>
+                    One of my favorite games from the Wild Kratts franchise,
+                    Draco Glide was simple enough to understand while still
+                    becoming challenging in its later levels. It struck a nice
+                    balance where I could still complete it as a kid without it
+                    feeling too easy.
+                  </p>
+                  <p>
+                    I especially liked how smooth and responsive the controls
+                    felt, which made gliding around as the dragon really
+                    satisfying. The game also had a good variety of levels and
+                    challenges that kept me engaged for a long time, including
+                    flying through smaller hoops and avoiding predators while
+                    airborne.
+                  </p>
+                </div>
+              </details>
             </div>
           </div>
         </section>
@@ -74,7 +86,7 @@
           <article class="portal-card">
             <h3>Website Memories</h3>
             <p>
-              Menus, buttons, sounds, layouts, and things buried in my brain.
+              Menus, buttons, sounds, layouts and things buried in my brain.
             </p>
             <a href="memories.html">Enter</a>
           </article>
@@ -195,12 +207,13 @@
   .featured-card {
     display: flex;
     gap: 20px;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .featured-card img {
-    width: 240px;
-    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    flex-shrink: 0;
     border: 4px solid #333;
     border-radius: 12px;
   }
@@ -265,6 +278,36 @@
 
   .footer-text {
     font-size: 0.8rem;
+  }
+
+  game-details {
+    margin-top: 15px;
+  }
+
+  .game-details summary {
+    display: inline-block;
+    padding: 7px 12px;
+    background: #fff6c7;
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .expanded-thoughts {
+    margin-top: 12px;
+    padding: 12px;
+    background: #ffffff;
+    border: 2px dashed #777;
+    border-radius: 10px;
+  }
+
+  .expanded-thoughts p:first-child {
+    margin-top: 0;
+  }
+
+  .expanded-thoughts p:last-child {
+    margin-bottom: 0;
   }
 
   @media (max-width: 700px) {
