@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="favicon/construction.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memories | PBS Kids Nostalgia Archive</title>
-    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -36,65 +36,79 @@
 
         <section class="memory-grid">
           <article class="memory-card">
-            <h3>Favorite Shows</h3>
+            <h3>I Was Here for the Games</h3>
             <p>
-              A place to talk about the shows I watched most and what I remember
-              liking about them.
+              Interestingly, I did not really watch PBS Kids growing up despite
+              spending so much time on its website. I was mainly there for the
+              games. The only PBS Kids show I remember watching for a while was
+              Maya &amp; Miguel, but even that was not something I watched for
+              very long.
+            </p>
+            <p>
+              When it came to television, I was much more of a Cartoon Network,
+              Nickelodeon, and Boomerang kid. Because of that, most of my
+              familiarity with shows like Arthur, Wild Kratts, Martha Speaks,
+              Dinosaur Train, and Curious George actually came through their
+              games rather than the shows themselves.
             </p>
           </article>
 
           <article class="memory-card">
             <h3>Website Design</h3>
             <p>
-              Old navigation menus, colorful buttons, character-themed pages,
-              and the general look of PBS Kids websites from the 2000s.
+              One of the things I remember most about the old PBS Kids website
+              was the large character wheel in the middle of the homepage. I
+              liked hovering over the arrows and cycling through the different
+              shows until I found the franchise I wanted.
+            </p>
+            <p>
+              I usually spent most of my time in the Games section, either
+              browsing from the main homepage or going directly into the pages
+              for specific shows. I also liked that the individual franchise
+              pages did not all look the same. Their layouts, colors, and
+              decorations were usually designed around the shows themselves,
+              which made each section feel like its own little world instead of
+              just another page on the same website.
             </p>
           </article>
 
           <article class="memory-card">
             <h3>Sounds & Music</h3>
             <p>
-              Menu music, little sound effects, voices, and other audio that
-              immediately brings the old games back.
+              Surprisingly, a lot of the PBS Kids games I remember did not use
+              much background music. Wild Kratts stood out the most because its
+              games often had more intense music that matched how much attention
+              they required, especially during competitive or fast-paced
+              sections.
+            </p>
+            <p>
+              The smaller sound effects are what bring back stronger memories
+              for me. In Martha Speaks: Crazy Vehicle, the sound of clicking the
+              different transformation buttons immediately felt familiar when I
+              played it again. It is funny how something as simple as a button
+              sound can bring back a whole chunk of childhood.
             </p>
           </article>
 
           <article class="memory-card">
             <h3>Things I Forgot About</h3>
             <p>
-              Small details that only came back once I started looking through
-              old games and screenshots again.
+              One franchise I completely forgot to mention at first was Sid the
+              Science Kid, even though I played a lot of its games growing up. I
+              remember them being especially relaxing to play while still
+              teaching you something, which made them stand out from some of the
+              more fast-paced games on the site.
+            </p>
+            <p>
+              Most of the games I remember seem to be lost to time now, although
+              a few are still available. Revisiting them reminded me how
+              memorable the franchise actually was for me, especially because
+              the games managed to feel educational without making the learning
+              part feel overwhelming.
             </p>
           </article>
         </section>
-
-        <section class="show-memories">
-          <h2>Show Memories</h2>
-
-          <div class="show-memory-list">
-            <article class="show-memory">
-              <h3>Arthur</h3>
-              <p>Add a short personal memory here.</p>
-            </article>
-
-            <article class="show-memory">
-              <h3>Martha Speaks</h3>
-              <p>Add a short personal memory here.</p>
-            </article>
-
-            <article class="show-memory">
-              <h3>Wild Kratts</h3>
-              <p>Add a short personal memory here.</p>
-            </article>
-
-            <article class="show-memory">
-              <h3>Curious George</h3>
-              <p>Add a short personal memory here.</p>
-            </article>
-          </div>
-        </section>
       </main>
-
       <footer>
         <p>Part of the PBS Kids Nostalgia Archive.</p>
       </footer>
@@ -108,6 +122,28 @@
     background: #fff2d6;
     border: 3px dashed #555;
     border-radius: 18px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav a {
+    padding: 10px 18px;
+    background: white;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid #333;
+    border-radius: 20px;
+    box-shadow: 3px 3px 0 #333;
+  }
+
+  nav a:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 #333;
   }
 
   .memory-grid {
@@ -141,30 +177,8 @@
     margin-top: 0;
   }
 
-  .show-memories {
-    margin-top: 20px;
-  }
-
-  .show-memory-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-
-  .show-memory {
-    padding: 16px;
-    background: #fafafa;
-    border: 2px solid #555;
-    border-radius: 14px;
-  }
-
-  .show-memory h3 {
-    margin-top: 0;
-  }
-
   @media (max-width: 700px) {
-    .memory-grid,
-    .show-memory-list {
+    .memory-grid {
       grid-template-columns: 1fr;
     }
   }
